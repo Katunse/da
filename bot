@@ -16,6 +16,9 @@ async def on_ready(ctx):
 async def help(ctx):
      await ctx.send("Существуют такие функции: #glass, #plastic и #plastic_bottle")
 @bot.command()
+async def dorabotka(ctx):
+     await ctx.send("Оно уже доработано =( ")
+@bot.command()
 async def plastic(ctx):
      await ctx.send('Проверьте дно бутылки, там будет указана цифра от 1 до 7. Она обозначает собой тип пластика, из которого сделана бутылка. Также она подскажет вам, может ли такая бутылка быть утилизирована местным центром переработки пластиковой тары.')
 @bot.command()
@@ -30,3 +33,4 @@ async def glass(ctx):
 
 
 bot.run("Тут это...... нельзя показывать")
+
